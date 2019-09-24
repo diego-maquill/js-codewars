@@ -8,7 +8,7 @@ function order(words) {
 
     return words.split(' ').sort(
         function (a, b) {
-            return a.match(/\d/) - b.match(/\d/); // where \d means a single digit
+            return a.match(/\d/) - b.match(/\d/); // where \d means a single digits[0-9]
         }).join(' ');
 }
 console.log(order("Yo4nas Tho7mas mi5ke is2 Thi1s T6est 3a "));
