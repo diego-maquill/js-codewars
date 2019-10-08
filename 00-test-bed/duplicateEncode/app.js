@@ -12,6 +12,7 @@ function duplicateEncode(word) {
         })
         .join('');
 }
+
 console.log(duplicateEncode("din"));// => "((("
 console.log(duplicateEncode("recede"));// => "()()()"
 console.log(duplicateEncode("Success"));// => ")())())"

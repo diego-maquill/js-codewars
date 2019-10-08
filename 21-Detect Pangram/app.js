@@ -6,9 +6,9 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 
 const unique = xs => [...new Set(xs)]; //using ES6 set
 
-function isPangram(string){
+function isPangram(string) {
   // Check if all unique characters are >= the 26 letters of the alphabet
-  return unique(string.toLowerCase()).join('').trim().replace(/\W+/g,'').length>=26;
+  return unique(string.toLowerCase()).join('').trim().replace(/\W+/g, '').length >= 26;
 }
 
 let string = "The quick brown fox jumps over the lazy dog."
