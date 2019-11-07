@@ -26,3 +26,5 @@ function pigIt(str) {
     }).join(' ');
 } */
 console.log(pigIt('Pig latin is cool ?'));
+console.log(pigIt('Pig latin is cool !'));
+console.log(pigIt('Pig latin is cool?'));

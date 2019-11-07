@@ -11,6 +11,7 @@ function SmallestIntegerFinder(A) {
     }
     return x
 }
-
 console.log(SmallestIntegerFinder([34, 15, 88, 2]));
-console.log(SmallestIntegerFinder([34, -345, -1, 100])); 
+console.log(SmallestIntegerFinder([34, -345, -1, 100]));
+console.log(SmallestIntegerFinder([1, 3, 6, 4, 1, 2]));
+console.log(SmallestIntegerFinder([-1, -3]));

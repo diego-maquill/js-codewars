@@ -14,10 +14,24 @@ function longestConsec(strarr, k) {
     return longest;
 }
 
-console.log(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2));
+/* function longestConsec(strarr, k) {
+    if (k <= 0 || k > strarr.length) {
+        return '';
+    }
+
+    return strarr.reduce((long, item, i) => {
+        const currString = strarr.slice(i, i + k).join('');
+        return (currString.length > long.length)
+            ? currString
+            : long;
+    }, '');
+} */
+
+console.log(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2));
 //returns => "abigailtheta"
 console.log(longestConsec([], 3));
 //returns =>""
-console.log(longestConsec(["it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz"], 3))
+console.log(longestConsec(["it", "ixoyx", "wkppv", "3452", "zzzzzzzzzzzz"], 3));
 //returns -=> "ixoyx3452zzzzzzz"
-console.log(longestConsec(["it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz"], 15)); //, "")
+console.log(longestConsec(["it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz"], 1));
+//, "")
