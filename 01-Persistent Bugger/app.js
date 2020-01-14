@@ -9,14 +9,14 @@ function persistence(num) {
 
   // Convert num to array of numbers
   numbers = convert_to_array_of_integers(num);
-  
+
   // Get the length of digits
   let numbersLength = numbers.toString();
 
   // While the length of digits of the number is greater than 1
-  while( numbersLength.length>1 ) {
+  while (numbersLength.length > 1) {
     // Multiply contents of the numbers array
-    product = numbers.reduce(function(a,b){return a*b;});
+    product = numbers.reduce(function (a, b) { return a * b; });
 
     // Convert num to array of numbers
     numbers = convert_to_array_of_integers(product);
@@ -35,14 +35,14 @@ function convert_to_array_of_integers(num) {
   var numbers = [];
   let sNum = num.toString();
 
-  for ( let i=0, len=sNum.length; i<len; i++ ) {
+  for (let i = 0, len = sNum.length; i < len; i++) {
     numbers.push(parseInt(sNum.charAt(i)));
   }
 
   return numbers;
 }
 
-console.log( persistence(39) );
-console.log( persistence(999) );
-console.log( persistence(4) );
-console.log( persistence(2435950) );
+console.log(persistence(39));
+console.log(persistence(999));
+console.log(persistence(4));
+console.log(persistence(2435950));
