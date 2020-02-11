@@ -23,10 +23,11 @@ function missing(arr, first, last) {
     for (var i = first; i < numberArray.lenght; i++) {
         for (var j = first; j <= last; j++) {
             if (arr[i] - arr[i - 1] != 1) {
-                
             }
         }
-
     }
-
 }
+console.log(SmallestIntegerFinder([34, 15, 88, 2]));
+console.log(SmallestIntegerFinder([34, -345, -1, 100]));
+console.log(SmallestIntegerFinder([1, 3, 6, 4, 1, 2]));
+console.log(SmallestIntegerFinder([-1, -3])); 
